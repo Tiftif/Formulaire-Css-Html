@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/style2.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <title>Formulaire exo</title>
+</head>
+
+<body>
+  <div class="loginbox">
+    <img src="img/avatar.png" class="avatar">
+    <h1>Votre retour nous est précieux !</h1>
+    <form>
+      <p>
+        <label for="satisfaction">Comment avez-vous trouvé le formulaire ?<sup>*</sup></label><br><br>
+        <input type="radio" name="satisfaction" value="yes" id="yes" required />
+        <label for="yes">Formidable!</label><br>
+        <input type="radio" name="satisfaction" value="meh" id="meh" />
+        <label for="meh">Peut mieux faire</label><br>
+        <input type="radio" name="satisfaction" value="no" id="no" />
+        <label for="no">Mais qu'est ce que c'est que cette horreur ?!</label>
+      </p>
+      <fieldset>
+        <p>
+          <label for="preference">Que préférez vous en matière de Webdesign?<sup>*</sup></label><br>
+          <select class="choice" name="userChoice">
+            <option value="Selectionnez une option" disabled selected>Sélectionnez une option</option>
+            <optgroup label="Originale">
+              <option value="brut">Brutalisme</option>
+              <option value="broken">Broken Layout</option>
+              <option value="scroll">Scroll reveal</option>
+            </optgroup>
+            <optgroup label="Classique">
+              <option value="flat">Flat design</option>
+              <option value="material">Matérial</option>
+              <option value="html">Html sur win95</option>
+            <optgroup>
+          </select>
+        </p>
+      </fieldset>
+      <p>
+        <label for="message">Que devrez t'on améliorer ? Votre avis compte et nous aidera beaucoup!<sup>*</sup></label><br>
+        <textarea name="message" rows="8" cols="80" id="message" required></textarea>
+      </p>
+
+      <input type="submit" name="" value="Envoyer le formulaire">
+    </form>
+
+  </div>
+</body>
+
+</html>
